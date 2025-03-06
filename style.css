@@ -1,0 +1,127 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: block;
+    background-color: white;
+    height: 50%;
+    width: 80%;
+    margin: auto;
+    border-color: black;
+    border-style: double;
+    position: relative;
+    overflow: hidden;
+    border-radius: 25px;
+}
+
+.RunBtn {
+    background-color: whitesmoke;
+    width: 10%;
+    font-weight: bold;
+    position: relative;
+    left: 50%;
+    bottom: 20%;
+    transform: translateX(-50%);
+    border-color: black;
+    box-sizing: content-box;
+    border-radius: 5%;
+    text-align: center;
+    font-size: 150%;
+}
+
+.values {
+    position: absolute;
+    font-size: 150%;
+    vertical-align: middle;
+    left: 50%;
+    top: 13%;
+    transform: translate(-50%, -50%);
+}
+
+.game-container {
+    position: relative;
+    width: 100%;
+    height: 100px; /* Adjust height as needed */
+}
+
+#obstacle {
+    position: absolute;
+    left: 80vw; /* Start at 80% viewport width */
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 200%;
+    font-weight: bold;
+}
+
+#rectangle {
+    height: 30%;
+    width: 82%;
+    left: 50%;
+    top: 39%;
+    background-color: red;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    visibility: hidden; /* Initially hidden */
+    margin: auto;
+    border-color: black;
+    text-align: center;
+    border-radius: 25px;
+}
+
+#space{
+    position:fixed;
+    height: 100%;
+    width: 100%;
+    background-color: #000000;
+}
+/* Hidden Triangle by Default */
+#gameOverScreen {
+    visibility: visible;
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 0;
+    height: 0;
+    background-color: green;
+    text-align: center;
+    padding-top: 40px; /* Adjust spacing */
+}
+
+/* Inside the Triangle */
+#gameOverScreen .content {
+    position: absolute;
+    top: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    color: red;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* Try Again Button */
+#tryAgainButton {
+    position: absolute;
+    top: 180px; /* Adjust button position */
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 10px 20px;
+    font-size: 18px;
+    font-weight: bold;
+    background-color: white;
+    color: black;
+    border: 2px solid black;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#tryAgainButton:hover {
+    background-color: lightgray;
+}
